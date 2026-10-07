@@ -31,7 +31,7 @@ footer{background:var(--pink);border-radius:56px 0 0 0;margin-top:30px;padding:5
 @media(max-width:640px){body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}.shell{width:calc(100% - 36px)}.nav{min-height:70px;gap:12px}.logo{width:145px;height:35px}.nav-cta{font-size:10px;padding:11px 12px}.hero{padding:38px 0 45px}.hero-layout{grid-template-columns:1fr;gap:20px}.eyebrow{font-size:10px;margin-bottom:22px}h1{font-size:clamp(54px,15vw,76px);max-width:420px}.hero-zh{font-size:25px}.hero-description{font-size:15px;max-width:100%}.hero-actions .pill{font-size:10px;padding:12px 13px}.hero-art{max-width:330px;width:90%;margin:auto;padding:20px 10px}.tape{top:5px;width:95px;height:28px}.stamp{bottom:7px}.chapter{padding:48px 0}.section-head h2{font-size:38px}.section-head p{font-size:13px;margin-top:18px}.about-spread{display:block;margin-bottom:35px}.about-spread .section-head{margin-bottom:28px}.story-gallery{gap:15px;padding:12px 6px}.story-sheet{padding:6px}.story-sheet:nth-child(2){margin-top:24px}.benefits{grid-template-columns:1fr;gap:0}.benefit{display:flex;gap:16px;padding:22px 0}.benefit .icon{margin:0}.benefit strong{font-size:18px}.benefit small{font-size:14px}.formats{border-radius:28px;margin:0 8px;padding:40px 0}.formats .shell{width:calc(100% - 28px)}.catalog{display:block}.format-menu{flex-direction:row;gap:8px;overflow-x:auto;border:0;margin-bottom:22px;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--pink) #ddd}.format-tab{flex:0 0 auto;display:flex;gap:9px;border:1px solid #17171766;border-radius:20px;padding:12px 14px;min-height:48px;font-size:11px}.format-tab[aria-selected="true"]{border-color:var(--pink)}.format-tab span:last-child{display:none}.format-card{padding:16px;border-radius:12px}.format-card .image-expand{max-width:none}.format-copy{grid-template-columns:40px 1fr;column-gap:10px}.format-copy h3{font-size:22px}.format-copy p{font-size:14px}.usecase-grid{grid-template-columns:1fr;column-gap:0}.usecase{padding:19px 0}.usecase strong{font-size:17px}.enquiry{padding:52px 0}.enquiry-inner.shell{width:calc(100% - 32px)}.fields{grid-template-columns:1fr}.form-card{padding:20px}footer{padding:35px 0;border-radius:36px 0 0 0}.footer-inner{grid-template-columns:1fr;gap:26px}.footer-contacts{justify-content:flex-start;flex-wrap:wrap;gap:25px}.footer-disclaimer{grid-column:1}.whatsapp-float{display:none}.mobile-contact{position:fixed;display:grid;grid-template-columns:1fr 1fr;gap:8px;bottom:0;left:0;right:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--ink);z-index:70}.mobile-contact a{font-size:12px;font-weight:700;text-align:center;padding:13px 8px;border:1px solid var(--ink);border-radius:20px;text-decoration:none;background:var(--paper)}section{scroll-margin-top:88px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill,.reveal{transition:none}.reveal.is-waiting{opacity:1;transform:none}}
 
-/* Timed campaign advertisement. Replace images/hero-1.jpg to change the artwork. */
+/* Timed campaign advertisement. Official logo links to the footer Instagram account. */
 .promo-dialog{width:min(520px,88vw,70dvh);max-width:none;max-height:90dvh;padding:0;border:1px solid #171717;border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 16px 70px #00000025}
 .promo-dialog::backdrop{background:rgba(23,23,23,.6)}
 .promo-artwork{position:relative;aspect-ratio:1/1;background:#fff}
@@ -39,6 +39,28 @@ footer{background:var(--pink);border-radius:56px 0 0 0;margin-top:30px;padding:5
 .promo-link img{display:block;width:100%;height:100%;object-fit:contain}
 .promo-close{position:absolute;top:10px;right:10px;z-index:1;width:44px;height:44px;border:1px solid #171717;border-radius:50%;background:#fff;color:#171717;font-size:28px;line-height:1;cursor:pointer}
 .promo-timer{margin:0;padding:12px 14px;border-top:1px solid #eee;color:#625d58;font-size:12px;text-align:center;background:#fdfbf9}
+
+/* Large photo gallery: all seven images remain available in the scroll rail. */
+.catalog{display:block}
+.gallery-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.gallery-toolbar .catalog-status{margin:0;font-size:12px}
+.gallery-controls{display:flex;gap:10px}
+.gallery-arrow{width:46px;height:46px;border:1px solid var(--ink);border-radius:50%;background:var(--paper);color:var(--ink);font-size:22px;cursor:pointer}
+.gallery-arrow:hover{color:var(--pink);border-color:var(--pink)}
+.gallery-arrow:disabled{opacity:.3;cursor:default}
+.format-stage{display:flex;gap:32px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--pink) #e4d9d0;padding:0 0 22px;}
+.format-card{flex:0 0 min(460px,42vw);display:block;background:transparent;border:0;border-radius:0;box-shadow:none;padding:0;margin:0;scroll-snap-align:start;min-width:0}
+.format-card .image-expand{max-width:none;margin:0;border:1px solid #17171720;border-radius:12px}
+.format-card img{width:100%;height:auto;object-fit:contain}
+.format-copy{display:block;padding:20px 0 0}
+.sheet-number{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin:0 0 12px}
+.format-copy h3{font-size:26px;line-height:1.25}
+.format-copy p{font-size:14px;line-height:1.8;margin-bottom:16px}
+.format-copy .tag{width:auto}
+.mobile-contact a{display:flex;align-items:center;justify-content:center;gap:7px}
+.mobile-contact svg{width:20px;height:20px;flex:none}
+@media(max-width:900px){.format-card{flex-basis:52vw}.format-stage{gap:24px}}
+@media(max-width:640px){.format-card{flex-basis:88%}.format-stage{gap:18px}.format-copy h3{font-size:23px}.whatsapp-float{display:grid;right:16px;bottom:calc(90px + env(safe-area-inset-bottom));width:54px;height:54px}.whatsapp-float svg{width:29px;height:29px}}
 </style></head><body><header class="topbar">
     <nav class="nav shell" aria-label="主選單">
       <a href="#top" class="logo" aria-label="MEGURI 首頁"><img src="images/meguri-logo.jpeg" alt="MEGURI" width="1600" height="1600"></a>
@@ -60,7 +82,7 @@ footer{background:var(--pink);border-radius:56px 0 0 0;margin-top:30px;padding:5
         <div class="benefit"><span class="icon" aria-hidden="true">ϟ</span><div><strong>Activation｜啟動</strong><small>將推廣帶到現場，與顧客直接互動。</small></div></div>
         <div class="benefit"><span class="icon" aria-hidden="true">✦</span><div><strong>Experience｜體驗</strong><small>設計值得記住的流動品牌體驗。</small></div></div>
       </div></section>
-<section id="formats" class="formats"><div class="shell"><span class="chapter-label" aria-hidden="true">02 — MEGURI</span><div class="section-head"><h2>CHOOSE YOUR <span>FORMAT</span></h2><p>不同形式，配合不同目標，讓品牌走進更多場景。</p></div><div class="catalog"><div class="format-menu" aria-label="選擇廣告車型"><button type="button" class="format-tab" id="format-tab-0" aria-controls="format-panel-0"><span class="tab-number">01</span><span>Moving Showroom｜流動展廳</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-1" aria-controls="format-panel-1"><span class="tab-number">02</span><span>Display Truck｜展示廣告車</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-2" aria-controls="format-panel-2"><span class="tab-number">03</span><span>Small Truck｜小型流動廣告車</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-3" aria-controls="format-panel-3"><span class="tab-number">04</span><span>Volkswagen T2｜復古廣告車</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-4" aria-controls="format-panel-4"><span class="tab-number">05</span><span>Ice Cream Truck｜雪糕車</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-5" aria-controls="format-panel-5"><span class="tab-number">06</span><span>Tram Parade｜電車巡遊</span><span aria-hidden="true">↗</span></button><button type="button" class="format-tab" id="format-tab-6" aria-controls="format-panel-6"><span class="tab-number">07</span><span>Crystal Bus｜水晶巴士</span><span aria-hidden="true">↗</span></button></div><div class="format-stage"><article class="format-card" id="format-panel-0" aria-labelledby="format-tab-0"><button class="image-expand" type="button" aria-label="放大Moving Showroom｜流動展廳圖片"><img src="images/moving-showroom.jpg" alt="Moving Showroom 流動展廳" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">01</span><h3>Moving Showroom｜流動展廳</h3><p>以可進入的車廂展示產品，打造近距離品牌體驗。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-1" aria-labelledby="format-tab-1"><button class="image-expand" type="button" aria-label="放大Display Truck｜展示廣告車圖片"><img src="images/display-truck.jpg" alt="Display Truck 展示廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">02</span><h3>Display Truck｜展示廣告車</h3><p>在城市街頭展示品牌、裝置及活動內容。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-2" aria-labelledby="format-tab-2"><button class="image-expand" type="button" aria-label="放大Small Truck｜小型流動廣告車圖片"><img src="images/small-truck.jpg" alt="Small Truck 小型流動廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">03</span><h3>Small Truck｜小型流動廣告車</h3><p>靈活穿梭不同地區，適合品牌曝光與推廣。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-3" aria-labelledby="format-tab-3"><button class="image-expand" type="button" aria-label="放大Volkswagen T2｜復古廣告車圖片"><img src="images/volkswagen-t2.jpg" alt="Volkswagen T2 復古廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">04</span><h3>Volkswagen T2｜復古廣告車</h3><p>以搶眼復古造型，營造具話題性的活動場景。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-4" aria-labelledby="format-tab-4"><button class="image-expand" type="button" aria-label="放大Ice Cream Truck｜雪糕車圖片"><img src="images/ice-cream-truck.jpg" alt="Ice Cream Truck 雪糕車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">05</span><h3>Ice Cream Truck｜雪糕車</h3><p>將品牌與派發、試食及街頭互動結合。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-5" aria-labelledby="format-tab-5"><button class="image-expand" type="button" aria-label="放大Tram Parade｜電車巡遊圖片"><img src="images/tram-parade.jpg" alt="Tram Parade 電車巡遊" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">06</span><h3>Tram Parade｜電車巡遊</h3><p>以電車巡遊形式，打造城市中的品牌體驗與互動。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-6" aria-labelledby="format-tab-6"><button class="image-expand" type="button" aria-label="放大Crystal Bus｜水晶巴士圖片"><img src="images/crystal-bus.jpg" alt="Crystal Bus 水晶巴士" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">07</span><h3>Crystal Bus｜水晶巴士</h3><p>以水晶巴士呈現品牌活動，連結乘客與城市場景。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><p class="catalog-status" role="status" aria-live="polite"></p></div></div></div></section>
+<section id="formats" class="formats"><div class="shell"><span class="chapter-label" aria-hidden="true">02 — MEGURI</span><div class="section-head"><h2>CHOOSE YOUR <span>FORMAT</span></h2><p>不同形式，配合不同目標，讓品牌走進更多場景。</p></div><div class="catalog"><div class="gallery-toolbar"><p class="catalog-status" role="status" aria-live="polite">01 / 07</p><div class="gallery-controls"><button class="gallery-arrow gallery-prev" type="button" aria-label="上一款車型">←</button><button class="gallery-arrow gallery-next" type="button" aria-label="下一款車型">→</button></div></div><div class="format-stage" tabindex="0" role="region" aria-label="七款車型圖片，左右滑動瀏覽"><article class="format-card" id="format-panel-0" aria-labelledby="format-title-0"><button class="image-expand" type="button" aria-label="放大Moving Showroom｜流動展廳圖片"><img src="images/moving-showroom.jpg" alt="Moving Showroom 流動展廳" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">01</span><h3 id="format-title-0">Moving Showroom｜流動展廳</h3><p>以可進入的車廂展示產品，打造近距離品牌體驗。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-1" aria-labelledby="format-title-1"><button class="image-expand" type="button" aria-label="放大Display Truck｜展示廣告車圖片"><img src="images/display-truck.jpg" alt="Display Truck 展示廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">02</span><h3 id="format-title-1">Display Truck｜展示廣告車</h3><p>在城市街頭展示品牌、裝置及活動內容。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-2" aria-labelledby="format-title-2"><button class="image-expand" type="button" aria-label="放大Small Truck｜小型流動廣告車圖片"><img src="images/small-truck.jpg" alt="Small Truck 小型流動廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">03</span><h3 id="format-title-2">Small Truck｜小型流動廣告車</h3><p>靈活穿梭不同地區，適合品牌曝光與推廣。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-3" aria-labelledby="format-title-3"><button class="image-expand" type="button" aria-label="放大Volkswagen T2｜復古廣告車圖片"><img src="images/volkswagen-t2.jpg" alt="Volkswagen T2 復古廣告車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">04</span><h3 id="format-title-3">Volkswagen T2｜復古廣告車</h3><p>以搶眼復古造型，營造具話題性的活動場景。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-4" aria-labelledby="format-title-4"><button class="image-expand" type="button" aria-label="放大Ice Cream Truck｜雪糕車圖片"><img src="images/ice-cream-truck.jpg" alt="Ice Cream Truck 雪糕車" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">05</span><h3 id="format-title-4">Ice Cream Truck｜雪糕車</h3><p>將品牌與派發、試食及街頭互動結合。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-5" aria-labelledby="format-title-5"><button class="image-expand" type="button" aria-label="放大Tram Parade｜電車巡遊圖片"><img src="images/tram-parade.jpg" alt="Tram Parade 電車巡遊" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">06</span><h3 id="format-title-5">Tram Parade｜電車巡遊</h3><p>以電車巡遊形式，打造城市中的品牌體驗與互動。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article><article class="format-card" id="format-panel-6" aria-labelledby="format-title-6"><button class="image-expand" type="button" aria-label="放大Crystal Bus｜水晶巴士圖片"><img src="images/crystal-bus.jpg" alt="Crystal Bus 水晶巴士" loading="lazy" width="1122" height="1402"><span class="expand-icon" aria-hidden="true">↗</span></button><div class="format-copy"><span class="sheet-number" aria-hidden="true">07</span><h3 id="format-title-6">Crystal Bus｜水晶巴士</h3><p>以水晶巴士呈現品牌活動，連結乘客與城市場景。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article></div></div></div></section>
 <section id="uses" class="chapter shell"><span class="chapter-label" aria-hidden="true">03 — MEGURI</span><div class="section-head"><h2>BEST FOR / <span>USE CASES</span></h2><p>靈活應用，適合不同品牌目標與推廣場景。</p></div><div class="usecase-grid">
         <div class="usecase"><span class="icon" aria-hidden="true">⬡</span><div><strong>Product display</strong><small>產品展示</small></div></div>
         <div class="usecase"><span class="icon" aria-hidden="true">▣</span><div><strong>Sampling</strong><small>產品試用／派發</small></div></div>
@@ -113,12 +135,12 @@ footer{background:var(--pink);border-radius:56px 0 0 0;margin-top:30px;padding:5
   </footer><a class="whatsapp-float" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" onclick="return gtag_report_conversion(this.href);" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 聯絡 MEGURI" title="WhatsApp 聯絡 MEGURI">
     <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"/></svg>
   </a>
-<nav class="mobile-contact" aria-label="快速查詢"><a href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" onclick="return gtag_report_conversion(this.href);" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="#enquiry">e-Form →</a></nav>
+<nav class="mobile-contact" aria-label="快速查詢"><a href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" onclick="return gtag_report_conversion(this.href);" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"/></svg><span>WhatsApp ↗</span></a><a href="#enquiry">e-Form →</a></nav>
 <dialog class="image-dialog" aria-label="車型圖片放大檢視"><div class="dialog-top"><p id="dialog-title"></p><button class="dialog-close" type="button" aria-label="關閉圖片">×</button></div><img id="dialog-image" alt=""></dialog>
-<!-- Promotional popup: uses existing MEGURI artwork, with no new image files. -->
+<!-- Promotional popup: official MEGURI logo links to Instagram. -->
 <dialog id="promo-dialog" class="promo-dialog" aria-label="MEGURI 活動廣告" aria-describedby="promo-timer">
  <div class="promo-artwork">
-  <a class="promo-link" href="#enquiry" aria-label="查詢 MEGURI 廣告車服務"><img id="promo-image" src="images/hero-1.jpg" alt="MEGURI 街頭廣告車活動" width="1122" height="1402"></a>
+  <a class="promo-link" href="https://www.instagram.com/meguri.ad/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @meguri.ad"><img id="promo-image" src="images/meguri-logo.jpeg" alt="MEGURI 官方 Logo" width="1600" height="1600"></a>
   <button class="promo-close" type="button" aria-label="關閉廣告" autofocus>×</button>
  </div>
  <p id="promo-timer" class="promo-timer">此廣告將於 <span id="promo-seconds">5</span> 秒後自動關閉</p>
@@ -163,33 +185,47 @@ footer{background:var(--pink);border-radius:56px 0 0 0;margin-top:30px;padding:5
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+  try {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18497496047/YIrvCLbtsJMdEO_HpfRE',
+        'transport_type': 'beacon'
+      });
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18497496047/YIrvCLbtsJMdEO_HpfRE',
-      'event_callback': callback
-  });
-  return false;
+  } catch (error) {
+    // Tracking must never prevent the native WhatsApp link from opening.
+  }
+  return true;
 }
 </script>
 
 <script>
 (() => {
- const menu=document.querySelector('.format-menu'), tabs=[...document.querySelectorAll('.format-tab')],panels=[...document.querySelectorAll('.format-card')];
- menu.setAttribute('role','tablist');
- tabs.forEach((t,i)=>{t.setAttribute('role','tab');panels[i].setAttribute('role','tabpanel');panels[i].tabIndex=0;});
- const query=new URLSearchParams(location.search);const initial=Number(query.get('format')||1)-1;
- function select(index,focus=false,updateUrl=false){
-  tabs.forEach((t,i)=>{t.setAttribute('aria-selected',String(i===index));t.tabIndex=i===index?0:-1;panels[i].hidden=i!==index;});
-  document.querySelector('.catalog-status').textContent=String(index+1).padStart(2,'0')+' / 07 · '+panels[index].querySelector('h3').textContent;
-  if(focus)tabs[index].focus();
-  if(updateUrl){const u=new URL(location.href);u.searchParams.set('format',String(index+1));history.replaceState(null,'',u);}
+ const rail=document.querySelector('.format-stage');
+ const cards=[...rail.querySelectorAll('.format-card')];
+ const prev=document.querySelector('.gallery-prev'),next=document.querySelector('.gallery-next');
+ const status=document.querySelector('.catalog-status');
+ const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+ function updateGallery(){
+  const x=rail.scrollLeft,max=rail.scrollWidth-rail.clientWidth;
+  prev.disabled=x<=2;next.disabled=x>=max-2;
+  const left=rail.getBoundingClientRect().left;
+  const current=cards.findIndex(card=>card.getBoundingClientRect().right>left+10);
+  status.textContent=String(Math.max(0,current)+1).padStart(2,'0')+' / 07';
  }
- select(Number.isInteger(initial)&&initial>=0&&initial<tabs.length?initial:0);
- tabs.forEach((t,i)=>{t.addEventListener('click',()=>select(i,false,true));t.addEventListener('keydown',e=>{let target=i;if(e.key==='ArrowRight'||e.key==='ArrowDown')target=(i+1)%tabs.length;else if(e.key==='ArrowLeft'||e.key==='ArrowUp')target=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')target=0;else if(e.key==='End')target=tabs.length-1;else return;e.preventDefault();select(target,true,true);});});
+ function moveGallery(direction){
+  const distance=cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(rail).gap);
+  rail.scrollBy({left:direction*distance,behavior:reducedMotion.matches?'instant':'smooth'});
+ }
+ prev.addEventListener('click',()=>moveGallery(-1));next.addEventListener('click',()=>moveGallery(1));
+ rail.addEventListener('scroll',updateGallery,{passive:true});
+ window.addEventListener('resize',updateGallery);
+ rail.addEventListener('keydown',event=>{
+  if(event.target!==rail)return;
+  if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();moveGallery(event.key==='ArrowRight'?1:-1);}
+  else if(event.key==='Home'||event.key==='End'){event.preventDefault();rail.scrollTo({left:event.key==='Home'?0:rail.scrollWidth,behavior:reducedMotion.matches?'instant':'smooth'});}
+ });
+ updateGallery();
  const dialog=document.querySelector('.image-dialog'),close=document.querySelector('.dialog-close');
  document.querySelectorAll('.image-expand').forEach(btn=>btn.addEventListener('click',()=>{const img=btn.querySelector('img');document.querySelector('#dialog-image').src=img.src;document.querySelector('#dialog-image').alt=img.alt;document.querySelector('#dialog-title').textContent=btn.closest('article').querySelector('h3').textContent;if(typeof dialog.showModal==='function')dialog.showModal();else window.open(img.src,'_blank','noopener');}));
  close.addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
@@ -209,7 +245,10 @@ function gtag_report_conversion(url) {
  function cleanup(){clearTimeout(closeTimer);clearInterval(tickTimer);}
  function dismiss(){cleanup();if(popup.open)popup.close();}
  popup.querySelector('.promo-close').addEventListener('click',dismiss);
- popup.querySelector('.promo-link').addEventListener('click',dismiss);
+ const promoLink=popup.querySelector('.promo-link');
+ const instagramLink=document.querySelector('footer a[href*="instagram.com/"]');
+ if(instagramLink)promoLink.href=instagramLink.href;
+ promoLink.addEventListener('click',()=>{setTimeout(dismiss,0);});
  popup.addEventListener('close',cleanup);
  popup.addEventListener('click',event=>{
   if(event.target!==popup)return;
